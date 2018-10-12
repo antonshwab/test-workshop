@@ -1,0 +1,30 @@
+---
+
+version: '3'
+
+services:
+
+  db:
+    image: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    build:
+      context: services/app
+      dockerfile: Dockerfile.development
+    command: mix phx.server
+    ports:
+      - "${PORT}:${PORT}"
+    env_file: '.env'
+    volumes:
+      - "app_static:/app/priv/static"
+      - "./services/app:/app"
+      - "~/.bash_history:/root/.bash_history:cached"
+      - "/tmp:/tmp:cached"
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
+  app_static:

@@ -1,0 +1,7 @@
+---
+
+workshop_mix_env: dev
+workshop_run_user: "{{ ansible_ssh_user }}"
+workshop_run_user_home: "{{ lookup('env','HOME') }}"
+workshop_env_file: "{{ lookup('env','PWD') }}/.env"
+workshop_node_env: development

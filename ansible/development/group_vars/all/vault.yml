@@ -1,0 +1,9 @@
+# -*- mode: yaml; vault: true; -*-
+---
+
+workshop_vault_db_hostname: "db"
+workshop_vault_db_username: "postgres"
+workshop_vault_db_pool_size: 2
+workshop_vault_db_password: ""
+workshop_vault_db_name: "workshop_dev"
+workshop_vault_secret_key_base: "as df;lkajsdf ;alkjsdf ;alksdjf ;alksdjf ;alskdjf ;alskdjf a;lsdjkf ;alsdkjfa ;lskdjf a;lskdj f;alksdjf ;alksjdfal;sdjfqwerty"

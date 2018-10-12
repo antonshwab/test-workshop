@@ -1,0 +1,4 @@
+---
+
+workshop_repository: "git@github.com:antonshwab/test-workshop.git"
+workshop_port: 4000
