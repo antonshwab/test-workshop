@@ -1,0 +1,3 @@
+.jumbotron
+  - messenger = @messenger
+  .h2 Hello World, from #{messenger}
